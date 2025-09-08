@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "gilroy-medium";
+    src: url("./fonts/Gilroy-SemiBold.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+.top-container{
+    width: 100%;
+    height: 55%;
+    /* background-color: blue; */
+    overflow: hidden;
+}
+.coffe-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bottom-container{
+    width: 100%;
+    height: 45%;
+    background: linear-gradient(2deg, white, white 40%, pink);
+    border-top-left-radius: 1.8rem;
+    border-top-right-radius: 1.8rem;
+}
+.welcome-container{
+    width: 100%;
+    height: 35%;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    padding:2% 3% 3%;
+    font-family: gilroy-medium;
+}
+.welcome-text{
+    font-size: 2.6rem;
+}
+.wel-description{
+    margin-top: 2%;
+}
+.btn-container{
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.btn{
+    padding: 10px 20px 10px 20px;
+    border-radius: 12px;
+    width: 80%;
+    /* background-color: red; */
+    font-size: 2rem;
+}
+.sign-in-btn{
+    background-color: #BC7D45;
+    border-width: 0px;
+    outline: none;
+    color: white;
+}
+.create-acc-btn{
+    background-color: transparent;
+    border: 3px solid black;
+    border-width: 1.5px;
+    font-size: 1.6rem;
+}
+
+.guest-btn{
+    font-size: 1.2rem;
+    background-color: transparent;
+    border-width: 0px;
+    margin-top: 8%;
+    font-weight: 600;
+}
+/* .line{
+    width: 18%;
+    height: 7px;
+    border-radius: 10px;
+    background-color: rgb(83, 83, 83);
+    margin-left: 43%;
+    position: absolute;
+    margin-top: 1%;
+} */
