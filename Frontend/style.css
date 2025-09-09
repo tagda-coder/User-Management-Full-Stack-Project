@@ -45,7 +45,6 @@ html, body {
   width: 100%;
   height: 100%;
 }
-
 .top-container {
   height: 55%;
   overflow: hidden;
@@ -119,4 +118,63 @@ html, body {
   border: none;
   font-weight: 600;
   margin-top: var(--spacing-xl);
+}
+
+
+/*  Login Page Css  */
+.login-container{
+  width: 100%;
+  height: 100%;
+  background-color: #f7dede;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+}
+.form-container{
+  width: 100%;
+  height: 60%;
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+.login-label-text{
+  font-size: 1.2rem;
+  margin-left: 2%;
+}
+.login-field{
+  width: 80vw;
+  height: 5vh;
+  border-radius: 10px;
+  text-align: left;
+  padding: 10px;
+  border-width: 0px;
+  outline: none;
+  background-color: #FFFFFF;
+  margin-top: 1.5%;
+}
+.Login-btn{
+  text-align: center;
+  background-color: var(--coffee-color);
+  font-size: var(--font-size-button);
+  color: var(--text-light);
+  margin-top: 10%;
+}
+.forget-btn{
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+.important-section{
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
 }
