@@ -1,100 +1,122 @@
+/* Custom properties for colors, fonts, and spacing */
+:root {
+  --coffee-color: #BC7D45;
+  --text-primary: #000;
+  --text-light: #fff;
+  --bg-gradient-top: #fff;
+  --bg-gradient-middle: #fff;
+  --bg-gradient-bottom: pink;
+  
+  --border-radius-large: 1.8rem;
+  --spacing-small: 12px;
+  --spacing-medium: 2%;
+  --spacing-large: 3%;
+  --spacing-xl: 8%;
+
+  --font-size-button: 1.6rem;
+  --font-size-heading: 2.6rem;
+  --font-size-guest-btn: 1.2rem;
+  --border-width-button: 1.5px;
+}
+
 @font-face {
-    font-family: "gilroy-medium";
-    src: url("./fonts/Gilroy-SemiBold.ttf");
+  font-family: "gilroy-medium";
+  src: url("./fonts/Gilroy-SemiBold.ttf");
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html, body{
-    width: 100%;
-    height: 100%;
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.wrapper{
-    width: 100%;
-    height: 100%;
-    /* background-color: red; */
-}
-.top-container{
-    width: 100%;
-    height: 55%;
-    /* background-color: blue; */
-    overflow: hidden;
-}
-.coffe-image{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.bottom-container{
-    width: 100%;
-    height: 45%;
-    background: linear-gradient(2deg, white, white 40%, pink);
-    border-top-left-radius: 1.8rem;
-    border-top-right-radius: 1.8rem;
-}
-.welcome-container{
-    width: 100%;
-    height: 35%;
-    /* background-color: brown; */
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    text-align: center;
-    padding:2% 3% 3%;
-    font-family: gilroy-medium;
-}
-.welcome-text{
-    font-size: 2.6rem;
-}
-.wel-description{
-    margin-top: 2%;
-}
-.btn-container{
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-}
-.btn{
-    padding: 10px 20px 10px 20px;
-    border-radius: 12px;
-    width: 80%;
-    /* background-color: red; */
-    font-size: 2rem;
-}
-.sign-in-btn{
-    background-color: #BC7D45;
-    border-width: 0px;
-    outline: none;
-    color: white;
-}
-.create-acc-btn{
-    background-color: transparent;
-    border: 3px solid black;
-    border-width: 1.5px;
-    font-size: 1.6rem;
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: "gilroy-medium", sans-serif;
+  color: var(--text-primary);
 }
 
-.guest-btn{
-    font-size: 1.2rem;
-    background-color: transparent;
-    border-width: 0px;
-    margin-top: 8%;
-    font-weight: 600;
+/* Layout containers */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
-/* .line{
-    width: 18%;
-    height: 7px;
-    border-radius: 10px;
-    background-color: rgb(83, 83, 83);
-    margin-left: 43%;
-    position: absolute;
-    margin-top: 1%;
-} */
+
+.top-container {
+  height: 55%;
+  overflow: hidden;
+}
+
+.bottom-container {
+  height: 45%;
+  background: linear-gradient(2deg, var(--bg-gradient-top), var(--bg-gradient-middle) 40%, var(--bg-gradient-bottom));
+  border-top-left-radius: var(--border-radius-large);
+  border-top-right-radius: var(--border-radius-large);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--spacing-medium) var(--spacing-large);
+}
+
+.coffe-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Component styles */
+.welcome-container {
+  text-align: center;
+}
+
+.welcome-text {
+  font-size: var(--font-size-heading);
+}
+
+.wel-description {
+  margin-top: var(--spacing-medium);
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-small);
+   margin-top: 10%;/* Pushes the button container to the bottom */
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: var(--spacing-small);
+  width: 80%;
+  font-size: var(--font-size-button);
+  font-family: inherit;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.sign-in-btn {
+  background-color: var(--coffee-color);
+  border: none;
+  color: var(--text-light);
+}
+
+.create-acc-btn {
+  background-color: transparent;
+  border: var(--border-width-button) solid var(--text-primary);
+  font-size: var(--font-size-button);
+}
+
+.guest-btn {
+  font-size: var(--font-size-guest-btn);
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  margin-top: var(--spacing-xl);
+}
