@@ -134,7 +134,7 @@ html, body {
 }
 .form-container{
   width: 100%;
-  height: 60%;
+  height: 82%;
   /* background-color: pink; */
   display: flex;
   flex-direction: column;
@@ -161,6 +161,25 @@ form{
   background-color: #FFFFFF;
   margin-top: 1.5%;
 }
+.password-container{
+  width: 80vw;
+  height: 5vh;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.password-field{
+  margin-top: 0%;
+  width: 87%;
+  height: 100%;
+  /* background-color: red; */
+}
+.password-check-icon{
+  font-size: 1.2rem;
+  cursor: pointer;
+}
 .Login-btn{
   text-align: center;
   background-color: var(--coffee-color);
@@ -177,4 +196,19 @@ form{
   display: flex;
   justify-content: space-between;
   font-size: 0.9rem;
+  margin-top: -2%;
+  padding: 0px 5px 0px 5px;
+}
+.vector-image-container{
+  /* background-color: red; */
+  object-fit: cover;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+#vectorImage{
+  width: 60%;
 }

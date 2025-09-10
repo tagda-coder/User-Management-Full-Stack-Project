@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-<body>
+<body id="login-page">
     <div class="login-container">
+        <div class="vector-image-container">
+            <img id="vectorImage" src="./Images/boy vector.png" alt="">
+        </div>
         <h1>Login</h1>
         <div class="form-container">
-            <form action="/login" method="POST">
+            <form id="login-form" action="/login" method="POST">
                 <label class="login-label-text" for="email">Email Address</label>
-                <input class="login-field"  required type="email" name="email" placeholder="Enter Your Email Address"> <br>
+                <input id="emailField" class="login-field"  required type="email" name="email" placeholder="Enter Your Email Address"> <br>
                 <label class="login-label-text" for="password">Password</label>
-                <input class="login-field" required type="password" name="password" placeholder="Password"><br>
-                
+                <div class="password-container">
+                    <input id="passwordField" class="login-field password-field" required type="password" name="password" placeholder="Password">
+                    <i id="passwordCheckIcon" class="password-check-icon ri-eye-off-fill"></i>
+                </div>
+                <br>
                 <div class="important-section">
                     <div>
                         <input type="checkbox">
@@ -23,7 +34,7 @@
                     </div>
                     <button class="forget-btn">Forget Password</button>
                 </div>
-                <button class="login-field Login-btn" type="submit">Sign In</button>
+                <button id="loginPageLoginBtn" class="login-field Login-btn" type="submit">Sign In</button>
             </form>
         </div>
         
